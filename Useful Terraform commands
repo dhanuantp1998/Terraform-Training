@@ -1,0 +1,22 @@
+Useful Commands
+$ terraform plan                                  # plan
+
+$ terraform apply                                 # shortcut for plan & apply - avoid this in production
+
+$ terraform plan -out out.terraform      # terraform plan and write the plan to out file
+
+$ terraform apply out.terraform            # apply terraform plan using out file
+
+$ terraform show                                  # show current state
+
+$ cat terraform.tfstate                           # show state in JSON format
+
+
+
+Using putty instead of the ssh command
+The course is explained using MacOS/Linux. If you rather want to use putty, use the following steps to create your SSH keypair:
+
+Download Putty and PuttyGen from http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+Launch PuttyGen and click the "Generate" button to generate a new public/private key
+You can enter a passphrase or leave it blank
+Save the public and private keys by clicking the Save public key and Save private key buttons
